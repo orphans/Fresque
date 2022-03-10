@@ -499,7 +499,7 @@ class Fresque
             'COUNT=' . 1 . " \\\n".
             'LOGHANDLER=' . escapeshellarg($this->runtime['Log']['handler']) . " \\\n".
             'LOGHANDLERTARGET=' . escapeshellarg($this->runtime['Log']['target']) . " \\\n".
-            'php ' . escapeshellarg($resqueBin) . " \\\n";
+            'php7.3 ' . escapeshellarg($resqueBin) . " \\\n";
             $cmd .= ' >> '. escapeshellarg($logFile).' 2>&1" >/dev/null 2>&1 &';
 
             $this->debug('Starting worker (' . $i . ')');
